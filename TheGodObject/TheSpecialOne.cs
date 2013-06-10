@@ -6,7 +6,7 @@ using System.Text;
 namespace TheGodObject
 {
     /// <summary>
-    /// This my special one!
+    /// My special one!
     /// </summary>
     public class TheSpecialOne : Person
     {
