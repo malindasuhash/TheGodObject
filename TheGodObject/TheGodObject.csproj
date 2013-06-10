@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Feedable.cs" />
+    <Compile Include="FeedableBase.cs" />
+    <Compile Include="IFeed.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="ICanCry.cs" />
     <Compile Include="ICanPoo.cs" />
