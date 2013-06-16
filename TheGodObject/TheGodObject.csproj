@@ -43,9 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Feedable.cs" />
+    <Compile Include="BottleFeed.cs" />
+    <Compile Include="BabyFeedable.cs" />
     <Compile Include="FeedableBase.cs" />
-    <Compile Include="IFeed.cs" />
+    <Compile Include="IFeedStyle.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="ICanCry.cs" />
     <Compile Include="ICanPoo.cs" />
@@ -54,6 +55,9 @@
     <Compile Include="TheSpecialOne.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Diagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

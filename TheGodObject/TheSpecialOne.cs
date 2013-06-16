@@ -10,19 +10,14 @@ namespace TheGodObject
     /// </summary>
     public class TheSpecialOne : Person
     {
-        public TheSpecialOne(Gender gender, string name): 
-            base(gender, name)
+        public TheSpecialOne(Gender gender, string name, FeedableBase feedable): 
+            base(gender, name, feedable)
         {
         }
 
         public override void Cry()
         {
             Console.WriteLine("Cry - Very loud");
-        }
-
-        public override void Feed()
-        {
-            Console.WriteLine("Special baby is feeding");
         }
 
         public override void Sleep()

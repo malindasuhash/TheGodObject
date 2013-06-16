@@ -10,10 +10,13 @@ namespace TheGodObject
     /// </summary>
     public abstract class Person : ICanCry, IFeedable, ICanPoo, ICanSleep
     {
-        protected Person(Gender gender, string name)
+        private FeedableBase _feedability;
+
+        protected Person(Gender gender, string name, FeedableBase feedable)
         {
             Gender = gender;
             Name = name;
+            _feedability = feedable;
         }
 
         public Gender Gender { get; protected set; }
@@ -22,13 +25,16 @@ namespace TheGodObject
 
         public abstract void Cry();
 
-        public abstract void Feed();
-
         public abstract void Sleep();
 
         public void Poo()
         {
             Console.WriteLine("Does the job");
+        }
+
+        public void Feed()
+        {
+            _feedability.Start();
         }
     }
 

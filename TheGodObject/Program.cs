@@ -9,7 +9,8 @@ namespace TheGodObject
     {
         static void Main(string[] args)
         {
-            var specialOne = new TheSpecialOne(Gender.Male, "Amith");
+            var babyFeed = new BabyFeedable(new BottleFeed());
+            var specialOne = new TheSpecialOne(Gender.Male, "Amith", babyFeed);
 
             Console.WriteLine(specialOne);
 

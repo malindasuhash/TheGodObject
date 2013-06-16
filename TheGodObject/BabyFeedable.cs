@@ -8,18 +8,18 @@ namespace TheGodObject
     /// <summary>
     /// Feeding!
     /// </summary>
-    public class Feedable : FeedableBase
+    public class BabyFeedable : FeedableBase
     {
-        public Feedable(IFeedStyle feed)
+        public BabyFeedable(IFeedStyle feed)
             : base(feed)
         {
         }
 
         public override void Start()
         {
-            Console.WriteLine("Starting to feed.");
+            Console.WriteLine("Starting to feed baby style!.");
 
-            _feed.Feed();
+            _feedStyle.Feed();
         }
     }
 }

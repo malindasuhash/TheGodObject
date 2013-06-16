@@ -10,11 +10,11 @@ namespace TheGodObject
     /// </summary>
     public abstract class FeedableBase
     {
-        protected IFeed _feed;
+        protected IFeedStyle _feedStyle;
 
-        protected FeedableBase(IFeed feed)
+        protected FeedableBase(IFeedStyle feed)
         {
-            _feed = feed;
+            _feedStyle = feed;
         }
 
         public abstract void Start();
